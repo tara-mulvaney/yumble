@@ -1,0 +1,29 @@
+{
+  "name": "yumble",
+  "version": "1.0.0",
+  "description": "restaurant app for UXDI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "db:init": "dropdb --if-exists restaurant_db && createdb restaurant_db",
+    "db:reset": "node ./scripts/resetDb",
+    "db:seed": "node ./scripts/seedDb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catvonnegut/yumble.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catvonnegut/yumble/issues"
+  },
+  "homepage": "https://github.com/catvonnegut/yumble#readme",
+  "dependencies": {
+    "express": "^4.17.0",
+    "nodemon": "^1.19.0",
+    "pg": "^7.11.0",
+    "sequelize": "^5.8.6"
+  }
+}
