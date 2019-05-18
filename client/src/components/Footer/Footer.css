@@ -1,0 +1,27 @@
+footer .flex-around {
+  height: 200px;
+  width: 100vw;
+  background-color: #f87060;
+  display: flex;
+  justify-content: left;
+  color: #ced6d6;
+}
+
+a {
+  text-decoration: none;
+  color: #ced6d6;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px 0px 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin: 15px;
+}
