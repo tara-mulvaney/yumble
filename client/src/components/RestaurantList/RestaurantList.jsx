@@ -1,7 +1,19 @@
-import React from "react";
+import React, {Component} from "react";
+import RestaurantProfile from "./components/"
 
-function RestaurantList() {
-  return <div />;
+class RestaurantList extends Component {
+  render() {
+    return (
+    <div>
+      <RestaurantProfile />
+      <RestaurantProfile />
+      <RestaurantProfile />
+      <RestaurantProfile />
+      <RestaurantProfile />
+      <RestaurantProfile />
+    </div>
+    )
+  }
 }
 
 export default RestaurantList;
