@@ -1,11 +1,20 @@
 import React from "react";
-import SearchByLocation from "../Home/SearchByLocation";
+import "./Home.css";
+import logo from "../Home/yumble_logo.png"
 
 function Home() {
   return (
     <div>
-      <h1>YUMBLE</h1>
-      <SearchByLocation />
+      <div className="parent">
+        <div className="left">
+          <h1><img src={logo}/></h1>
+        </div>
+        <div className="right">
+          <div className="searchbar">
+            <input type="text" id="searchLocation" placeholder="Delivery Address" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

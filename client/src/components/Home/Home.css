@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+h1 {
+  padding: 15% 0 0% 36%;
+  text-align: center;
+  margin-top: 22vh;
+  margin-left: 20vh;
+  
+}
+
+img {
+    width: 280px;
+    height: 180px;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  display: flex;
+  background-color: #F87060;
+  height: 97vh;
+  width: 50%;
+}
+
+.right {
+  display: flex;
+  background-color: #CDD7D6;
+  height: 97vh;
+  width: 50%;
+  justify-content: center;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.searchbar input {
+    width: 200px;
+    height: 80px;
+    padding: 5px;
+    margin-top: 35vh;
+    margin-left: -50vh;
+    border: none;
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+#searchLocation::-webkit-input-placeholder {
+    color: transparent;
+    text-indent: -9999px;
+    background-image: url("../Home/yumble-search-logo.png");
+    background-position: 0 50%;
+    background-repeat: no-repeat; 
+    background-size: 150px;
+    width: 100%;
+  }
+
