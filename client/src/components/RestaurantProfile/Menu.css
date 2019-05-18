@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100px;
+  width: 100vw;
+  background-color: green;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid gray;
+}
+
+
+body {
+  background-color: white;
+  font-family: century-gothic;
+}
+
+main {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 100px 0px 50px;
+}
+
+button {
+  padding: 10px;
+  background-color: darkorange;
+  opacity: .5;
+  color: white;
+  border-radius: 10px;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.restaurant-list {
+  background-color: white;
+  width: 60%;
+  height: 100vh;
+  border: solid black;
+  margin: 10px;
+}
+
+.filter {
+  background-color: white;
+  width: 40%;
+  height: 100vh;
+  border: solid black;
+  margin: 10px;
+}
+
+ h1 {
+    text-align: center;
+  }
+
+h2 {
+  margin: 10px;
+}
+
+p {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 0px;
+}
