@@ -1,0 +1,19 @@
+body {
+  background-color: #f87060;
+}
+
+.flex-around {
+  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: solid gray;
+}
+
+
+.restaurant-list {
+  background-color: white;
+  width: 60%;
+  height: 100vh;
+  border: solid black;
+  margin: 10px;
+}
