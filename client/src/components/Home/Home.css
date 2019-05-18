@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+h1 {
+  padding: 15% 0 0% 36%;
+  text-align: center;
+  margin-top: 27vh;
+  margin-left: 30vh;
+  
+}
+
+.parent {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  display: flex;
+  background-color: orange;
+  height: 97vh;
+  width: 50%;
+}
+
+.right {
+  display: flex;
+  background-color: green;
+  height: 97vh;
+  width: 50%;
+  justify-content: center;
+}
+
+input:focus {
+    outline: 0;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    margin-top: 40vh;
+    margin-left: -50vh;
+
+}
+

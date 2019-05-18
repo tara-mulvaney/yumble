@@ -1,11 +1,13 @@
 import React from "react";
 import LogInInput from "../Header/LogInInput";
+import "./Header.css";
 
 function Header() {
   return (
     <div>
-      <h1>Header</h1>
-      <LogInInput />
+      <div className="header">
+        <LogInInput />
+      </div>
     </div>
   );
 }
