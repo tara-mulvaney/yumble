@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
 .login {
     padding: 15px;
     display: flex;
@@ -9,6 +11,8 @@
     padding: 10px;
     margin: 2px;
     width: 150px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 14px;
 }
 
 input:focus {

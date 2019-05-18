@@ -7,7 +7,7 @@ function Home() {
     <div>
       <div className="parent">
         <div className="left">
-          <h1><img src={logo}/></h1>
+          <h1><img src={logo} alt="" /></h1>
         </div>
         <div className="right">
           <div className="searchbar">
