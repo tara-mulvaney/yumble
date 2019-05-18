@@ -8,7 +8,7 @@ body {
 header {
   height: 100px;
   width: 100vw;
-  background-color: green;
+  background-color: #f87060;
 }
 
 .profile {
@@ -24,7 +24,7 @@ h1 {
 .box-1 {
   display: flex;
   flex-direction: column;
-  border-bottom: solid gray;
+  border-bottom: solid #ced6d6;
 }
 
 
