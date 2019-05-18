@@ -1,5 +1,5 @@
 body {
-  background-color: orange;
+  background-color: #f87060;
   font-family: century-gothic;
 }
 
@@ -14,7 +14,7 @@ main {
 
 button {
   padding: 10px;
-  background-color: darkorange;
+  background-color: #f87060;
   opacity: .5;
   color: white;
   border-radius: 10px;
@@ -30,7 +30,7 @@ button {
   background-color: white;
   width: 60%;
   height: 100vh;
-  border: solid black;
+  border: solid #ced6d6;
   margin: 10px;
 }
 
@@ -38,7 +38,7 @@ button {
   background-color: white;
   width: 40%;
   height: 100vh;
-  border: solid black;
+  border: solid #ced6d6;
   margin: 10px;
 }
 
