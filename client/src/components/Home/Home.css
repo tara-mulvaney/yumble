@@ -4,7 +4,7 @@ body {
   overflow-y: hidden;
 }
 
-h1 {
+.home-h-one h1 {
   padding: 15% 0 0% 36%;
   text-align: center;
   margin-top: 22vh;
