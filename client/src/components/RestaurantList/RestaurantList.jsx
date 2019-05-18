@@ -1,5 +1,12 @@
-import React, {Component} from "react";
-import RestaurantProfile from "./components/"
+import React from "react";
+import FiltRestaurants from "./FilterRestaurants";
+
+function RestaurantList() {
+  return (
+    <div>
+      <FiltRestaurants />
+    </div>
+  );
 
 class RestaurantList extends Component {
   render() {
