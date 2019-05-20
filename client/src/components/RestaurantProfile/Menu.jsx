@@ -1,12 +1,12 @@
 import React from "react";
 import "./Menu.css";
 
-import starRating from "../assest/star-rating";
-import toast from "../assets/torrrzt";
-import cake from "../assets/cayke.png";
-import donut from "../assets/jamdonut.png";
-import crepe from "../assets/crepe.png";
-import mille from "../assets/millfeuille.png";
+import starRating from "../../assets/star-rating.png";
+import toast from "../../assets/torrrzt.png";
+import cake from "../../assets/cayke.png";
+import donut from "../../assets/jamdonut.png";
+import crepe from "../../assets/crepe.png";
+import mille from "../../assets/millefeuille.png";
 
 function Menu() {
   return (
@@ -73,12 +73,12 @@ function Menu() {
             <p>Menu Item</p>
           </div>
           <div class="flex-column">
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
           </div>
           <div class="flex-column">
             <p>Menu Item</p>
@@ -89,12 +89,12 @@ function Menu() {
             <p>Menu Item</p>
           </div>
           <div class="flex-column">
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
           </div>
         </div>
       </div>
@@ -110,12 +110,12 @@ function Menu() {
             <p>Menu Item</p>
           </div>
           <div class="flex-column">
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
           </div>
           <div class="flex-column">
             <p>Menu Item</p>
@@ -126,12 +126,12 @@ function Menu() {
             <p>Menu Item</p>
           </div>
           <div class="flex-column">
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
-            <p>$8 +</p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
+            <p>$8 <button> + Add </button></p>
           </div>
         </div>
       </div>
