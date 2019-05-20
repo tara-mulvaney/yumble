@@ -26,7 +26,7 @@ function Menu() {
           <p> <img src={crepe} alt="" /> </p>
           <p> <img src={mille} alt="" /> </p>
         </div>
-        <div class="flex">
+        <div class="flex-menu-buttons">
           <p>
             {" "}
             $8

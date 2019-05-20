@@ -48,7 +48,7 @@ main {
   margin: 0px 100px 0px 50px;
 }
 
-button {
+.flex-menu-button button {
     width: 82px;
     height: 28px;
     border-radius: 14px;

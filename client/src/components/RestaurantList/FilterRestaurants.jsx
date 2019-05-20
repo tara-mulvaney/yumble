@@ -1,19 +1,19 @@
 import React from "react";
-import "./RestaurantList.css";
+import "./FilterRestaurants.css";
 
-import RestaurantProfile from '../../components/RestaurantProfile/RestaurantProfile';
-import StarRating from "../../components/RestaurantList/StarRating";
+import RestaurantProfile from "../../components/RestaurantProfile/RestaurantProfile";
+// import StarRating from "../../components/RestaurantList/StarRating";
 
 function FilterRestaurants() {
   return (
     <main>
       <div className="restaurant-list">
-      <RestaurantProfile />
-      <RestaurantProfile />
-      <RestaurantProfile />
-      <RestaurantProfile />
-      <RestaurantProfile />
-      <RestaurantProfile />
+        <RestaurantProfile />
+        <RestaurantProfile />
+        <RestaurantProfile />
+        <RestaurantProfile />
+        <RestaurantProfile />
+        <RestaurantProfile />
         <div className="search" />
       </div>
       <div className="filter">
@@ -21,13 +21,12 @@ function FilterRestaurants() {
         <div className="flex">
           <p>Price</p>
           {/* <StarRating /> */}
-          <p>$</p>
-          <p>$$</p>
-          <p>$$$</p>
+          <button>$</button>
+          <button>$$</button>
+          <button>$$$</button>
         </div>
         <div className="flex">
           <p>Rating</p>
-          
         </div>
         <div className="flex">
           <p>Est Time</p>
