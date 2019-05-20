@@ -4,7 +4,7 @@ body {
   overflow-y: hidden;
 }
 
-.home-h-one h1 {
+.home-h-one {
   padding: 15% 0 0% 36%;
   text-align: center;
   margin-top: 22vh;
@@ -12,7 +12,7 @@ body {
   
 }
 
-img {
+.home-logo {
     width: 280px;
     height: 180px;
 }
