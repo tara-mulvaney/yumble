@@ -14,9 +14,9 @@ class App extends Component {
       <div className="App">
         <Header />
         {/* <Home /> */}
-        {/* <RestaurantList /> */}
-        <Menu />
-        <Footer />
+        <RestaurantList />
+        {/* <Menu /> */}
+        {/* <Footer /> */}
       </div>
     );
   }
