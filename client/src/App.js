@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 // import { Link, Route } from "react-router-dom";
 
-// import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 // import Home from "./components/Home/Home";
 import Header from "./components/Header/Header";
 // import RestaurantList from "./components/RestaurantList/RestaurantList";
@@ -13,7 +13,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Menu />
+      <Menu />
+      <Footer />
       </div>
     );
   }

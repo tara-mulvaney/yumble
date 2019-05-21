@@ -75,7 +75,7 @@ main {
   height: 36px;
   background-color: white;
   color: #f87060;
-  font-size: 35px;
+  font-size: 34px;
   border: none;
   font-family: "Inconsolata", monospace;
   border-radius: 10px;
@@ -107,12 +107,12 @@ p {
 
 .menu-image {
   width: 100px;
-  margin: 20px 0 0 0;
+  margin: 25px 0 0 0;
 }
 
 .star-rating-image {
-  width: 160px;
-  height: 28px;
+  width: 150px;
+  height: 26px;
 }
 
 .menu-item-spacing {
