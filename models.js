@@ -10,7 +10,9 @@ const db = new Sequelize({
 
 const Restaurant = db.define('restaurant', {
   name: Sequelize.STRING,
-  neighborhood: Sequelize.STRING
+  neighborhood: Sequelize.STRING,
+  url: Sequelize.STRING,
+  photo: Sequelize.STRING
 });
 
 const Review = db.define('review', {
@@ -18,8 +20,12 @@ const Review = db.define('review', {
 });
 
 const Cuisine = db.define('cuisine', {
-  style: Sequelize.STRING
+  food: Sequelize.STRING,
+  price: Sequelize.FLOAT
 });
+
+Cuisine.belongsTo(Restaurant);
+Restaurant.hasMany(Cuisine);
 
 module.exports = {
   db,

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "db:init": "dropdb --if-exists restaurant_db && createdb restaurant_db",
+    "db:init": "dropdb --if-exists yumble_db && createdb yumble_db",
     "db:reset": "node ./scripts/resetDb",
     "db:seed": "node ./scripts/seedDb"
   },
