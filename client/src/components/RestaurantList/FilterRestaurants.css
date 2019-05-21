@@ -1,87 +1,90 @@
 body {
-    background-color: #F87060;
-    font-family: 'Inconsolata', monospace;
-  }
+  background-color: #f87060;
+  font-family: "Inconsolata", monospace;
+}
 
-  main {
-    display: flex;
-  }
+main {
+  display: flex;
+}
 
-  .flex {
-    display: flex;
-    justify-content: center;
-    height: 65px;
-  }
+.flex {
+  display: flex;
+  justify-content: center;
+  height: 65px;
+}
 
-  .flex-around button {
-    padding: 10px;
-    background-color: #F87060;
-    opacity: .5;
-    color: white;
-    border-radius: 10px;
-    outline: none;
-    font-family: 'Inconsolata', monospace;
-    font-size: 18px;
-  }
-  
-  .flex-around button:focus {
-    padding: 10px;
-    background-color: #F87060;
-    opacity: 1;
-    color: white;
-    border-radius: 10px;
-    outline: none;
-    font-family: 'Inconsolata', monospace;
-    font-size: 18px;
-  }
-  
-  .flex-around {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  
-  .restaurant-list {
-    background-color: white;
-    width: 60%;
-    height: 100vh;
-    border: solid;
-    border-color: #CDD7D6;
-    margin: 10px;
-  }
-  
-  .filter {
-    background-color: white;
-    width: 30%;
-    height: 100vh;
-    border: solid;
-    border-color: #CDD7D6;
-    margin: 10px;
-    position: fixed;
-    right: 0px;
+.flex-around button {
+  padding: 10px;
+  background-color: #f87060;
+  opacity: 0.5;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 18px;
+}
 
-  }
-  
-   .filter h1 {
-      text-align: center;
-    }
-  
-  p {
-    margin-left: 15px;
-    margin-right: 15px;
-    font-size: 20px;
-  }
+.flex-around button:focus {
+  padding: 10px;
+  background-color: #f87060;
+  opacity: 1;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  font-family: "Inconsolata", monospace;
+  font-size: 18px;
+}
 
-  .flex button {
-      background-color: white;
-      border: none;
-      font-size: 14px;
-  }
+.flex-around {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-  
-  .flex button:focus {
-    background-color: #F87060;
-    border-radius: 10px;
-    outline: none;
-    height: 40px;
-  }
+.restaurant-list {
+  background-color: white;
+  width: 60%;
+  height: 100vh;
+  border: solid;
+  border-color: #cdd7d6;
+  margin: 10px;
+}
+
+.filter {
+  background-color: white;
+  width: 30%;
+  height: 75vh;
+  border: solid;
+  border-color: #cdd7d6;
+  margin: 10px;
+  position: fixed;
+  right: 0px;
+  margin-right: 90px;
+}
+
+.filter h1 {
+  text-align: center;
+}
+
+p {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.flex button {
+  background-color: white;
+  border: none;
+  font-size: 14px;
+}
+
+.flex button:focus {
+  background-color: #f87060;
+  border-radius: 10px;
+  outline: none;
+  height: 40px;
+}
+
+.search-restaurants input {
+  display: flex;
+  justify-content: center;
+}

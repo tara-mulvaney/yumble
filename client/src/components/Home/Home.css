@@ -1,4 +1,4 @@
-body {
+ body {
   margin: 0;
   padding: 0;
   overflow-y: hidden;
@@ -46,7 +46,7 @@ input:focus {
     height: 80px;
     padding: 5px;
     margin-top: 35vh;
-    margin-left: -50vh;
+    margin-left: -40vh;
     border: none;
     border-radius: 30px;
     font-size: 25px;
