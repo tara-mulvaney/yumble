@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="269" height="73" viewBox="0 0 269 73">
+    <defs>
+        <filter id="a" width="109.2%" height="136.9%" x="-4.6%" y="-18.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4 2)">
+        <rect width="260" height="64" x=".5" y=".5" fill="#F87060" stroke="#FFF" rx="17.5"/>
+        <text fill="#FFF" font-family="CenturyGothic, Century Gothic" font-size="37">
+            <tspan x="55" y="43">Pay Now</tspan>
+        </text>
+    </g>
+</svg>
