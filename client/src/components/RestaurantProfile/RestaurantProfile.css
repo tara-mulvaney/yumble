@@ -2,18 +2,20 @@ body {
   background-color: #f87060;
 }
 
-.flex-around {
-  margin: 10px 0 10px 0;
-  display: flex;
-  justify-content: space-evenly;
-  border-bottom: solid gray;
-}
-
-
 .restaurant-list {
   background-color: white;
-  width: 60%;
-  height: 100vh;
-  border: solid black;
+  width: 50vw;
+  height: 20vh;
+  border: solid gray;
   margin: 10px;
+  margin: 10px 0 10px 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.restaurant-list img {
+  width: 120px;
+  height: 120px;
+  margin-top: 10px;
+  margin-left: -100px;
 }

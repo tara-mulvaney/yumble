@@ -1,24 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 
-.login {
-    padding: 15px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.login input {
-    border: none;
-    padding: 10px;
-    margin: 2px;
-    width: 150px;
-    font-family: 'Inconsolata', monospace;
-    font-size: 14px;
-}
-
-input:focus {
-    outline: 0;
-}
-
-.header {
-    background-color: black;
+.home-logo {
+    width: 180px;
+    height: 100px;
 }
