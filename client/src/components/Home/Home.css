@@ -25,14 +25,14 @@
 .left {
   display: flex;
   background-color: #F87060;
-  height: 97vh;
+  height: 100vh;
   width: 50%;
 }
 
 .right {
   display: flex;
   background-color: #CDD7D6;
-  height: 97vh;
+  height: 100vh;
   width: 50%;
   justify-content: center;
 }

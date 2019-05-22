@@ -4,22 +4,46 @@ body {
 
 .restaurant-list {
   background-color: white;
-  width: 50vw;
+  width: 52vw;
   height: 20vh;
   border: solid gray;
   margin: 10px;
-  margin: 10px 0 10px 100px;
+  margin: 10px 0 0px 90px;
   display: flex;
   justify-content: space-evenly;
 }
 
 .restaurant-list img {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   margin-top: 10px;
   margin-left: -100px;
 }
 
 .restaurant-click:hover{
   cursor: pointer;
+}
+
+.restaurant-name {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.restaurant-price {
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+}
+
+.restaurant-deliv {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }

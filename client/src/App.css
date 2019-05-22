@@ -10,3 +10,11 @@
     transform: rotate(360deg);
   }
 } */
+
+button {
+  outline: none;
+}
+
+button:focus {
+   outline: none;
+}
