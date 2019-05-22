@@ -99,6 +99,56 @@ const motorinoMenu10 = await Menu.create({
   price: 20.50
 })
 
+const missionMenu1 = await Menu.create({
+  food: 'Iced Sichuan Water Pickles',
+  price: 8
+})
+
+const missionMenu2 = await Menu.create({
+  food: 'Chongqing Chicken Wings W/XXX Spices',
+  price: 16
+})
+
+const missionMenu3 = await Menu.create({
+  food: 'Salt Cod Fried Rice',
+  price: 16
+})
+
+const missionMenu4 = await Menu.create({
+  food: 'Green Tea Noodles',
+  price: 12
+})
+
+const missionMenu5 = await Menu.create({
+  food: 'Hot And Sour Rice Cakes',
+  price: 17
+})
+
+const missionMenu6 = await Menu.create({
+  food: 'Dan Dan Ramen',
+  price: 18
+})
+
+const missionMenu7 = await Menu.create({
+  food: 'Drunken Noodles',
+  price: 18
+})
+
+const missionMenu8 = await Menu.create({
+  food: 'Hainan Style Crab Rice',
+  price: 30
+})
+
+const missionMenu9 = await Menu.create({
+  food: 'Lobster Fried Rice',
+  price: 30
+})
+
+const missionMenu10 = await Menu.create({
+  food: 'Turmeric Lamb Rice',
+  price: 20
+})
+
 await motorinoMenu1.setRestaurant(motorino)
 await motorinoMenu2.setRestaurant(motorino)
 await motorinoMenu3.setRestaurant(motorino)
@@ -109,6 +159,17 @@ await motorinoMenu7.setRestaurant(motorino)
 await motorinoMenu8.setRestaurant(motorino)
 await motorinoMenu9.setRestaurant(motorino)
 await motorinoMenu10.setRestaurant(motorino)
+
+await missionMenu1.setRestaurant(mission)
+await missionMenu2.setRestaurant(mission)
+await missionMenu3.setRestaurant(mission)
+await missionMenu4.setRestaurant(mission)
+await missionMenu5.setRestaurant(mission)
+await missionMenu6.setRestaurant(mission)
+await missionMenu7.setRestaurant(mission)
+await missionMenu8.setRestaurant(mission)
+await missionMenu9.setRestaurant(mission)
+await missionMenu10.setRestaurant(mission)
 
 
 
