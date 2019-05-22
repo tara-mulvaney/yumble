@@ -1,19 +1,19 @@
-body {
+.list-body {
   background-color: #f87060;
   font-family: "Inconsolata", monospace;
 }
 
-main {
+.list-main {
   display: flex;
 }
 
-.flex {
+.list-flex {
   display: flex;
   justify-content: center;
   height: 65px;
 }
 
-.flex-around button {
+.list-flex-around button {
   padding: 10px;
   background-color: #f87060;
   opacity: 0.5;
@@ -24,7 +24,7 @@ main {
   font-size: 18px;
 }
 
-.flex-around button:focus {
+.list-flex-around button:focus {
   padding: 10px;
   background-color: #f87060;
   opacity: 1;
@@ -35,12 +35,12 @@ main {
   font-size: 18px;
 }
 
-.flex-around {
+.list-flex-around {
   display: flex;
   justify-content: space-evenly;
 }
 
-.restaurant-list {
+.list-restaurant-list {
   background-color: white;
   width: 60%;
   height: 100vh;
@@ -49,7 +49,7 @@ main {
   margin: 10px;
 }
 
-.filter {
+.list-filter {
   background-color: white;
   width: 30%;
   height: 75vh;
@@ -61,7 +61,7 @@ main {
   margin-right: 90px;
 }
 
-.filter h1 {
+.list-filter h1 {
   text-align: center;
 }
 
@@ -71,20 +71,20 @@ p {
   font-size: 20px;
 }
 
-.flex button {
+.list-flex button {
   background-color: white;
   border: none;
   font-size: 14px;
 }
 
-.flex button:focus {
+.list-flex button:focus {
   background-color: #f87060;
   border-radius: 10px;
   outline: none;
   height: 40px;
 }
 
-.search-restaurants input {
+.list-search-restaurants input {
   display: flex;
   justify-content: center;
 }

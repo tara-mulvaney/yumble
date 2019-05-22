@@ -1,17 +1,24 @@
-@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+  @import url("https://fonts.googleapis.com/css?family=Inconsolata");
 
-body {
+.menu-body {
   margin: 0;
   padding: 0;
 }
 
-header {
+.menu-banner {
+  height: 100px;
+  width: 100vw;
+  background-color: #f87060;
+  color:white;
+}
+
+.menu-header {
   height: 70px;
   width: 100%;
   background-color: #f87060;
 }
 
-.profile {
+.menu-profile {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -21,38 +28,38 @@ h1 {
   text-align: center;
 }
 
-.box-1 {
+.menu-box-1 {
   display: flex;
   flex-direction: column;
   border-bottom: solid #ced6d6;
 }
 
-body {
+.menu-body {
   background-color: white;
   font-family: "Inconsolata", monospace;
 }
 
-main {
+.menu-main {
   display: flex;
 }
 
-.flex {
+.menu-flex {
   display: flex;
   justify-content: space-evenly;
 }
 
-.flex-column {
+.menu-flex-column {
   display: flex;
   flex-direction: column;
   margin: 10px 100px 0px 20px;
 }
 
-.flex-menu-buttons {
+.menu-flex-menu-buttons {
   display: flex;
   justify-content: space-evenly;
 }
 
-.quick-add-button {
+.menu-quick-add-button {
   width: 82px;
   height: 28px;
   border-radius: 14px;
@@ -66,7 +73,7 @@ main {
   opacity: 0.5;
 }
 
-.quick-add-button:hover {
+.menu-quick-add-button:hover {
   opacity: 1;
 }
 
@@ -87,7 +94,7 @@ main {
   color: white;
 }
 
-.flex-around {
+.menu-flex-around {
   display: flex;
   justify-content: space-evenly;
 }
@@ -110,7 +117,7 @@ p {
   margin: 25px 0 0 0;
 }
 
-.star-rating-image {
+.menu-star-rating-image {
   width: 150px;
   height: 26px;
 }

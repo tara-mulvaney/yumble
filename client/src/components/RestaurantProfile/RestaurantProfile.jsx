@@ -5,15 +5,17 @@ import "./RestaurantProfile.css"
 
 class RestaurantProfile extends Component {
   render() {
+    const {restaurant,index,history,handleClick} = this.props
+    console.log(index);
     return (
       <div className="restaurant-list">
-        <img src={bitmapTwo} alt=" " />
-        <div cass="flex-column">
-          <p>Restaurant Name</p>
+        <img src={restaurant.photo} alt=" " />
+        <div className="flex-column">
+          <p>{restaurant.name}</p>
           <p> $ </p>
-          <p>Est. Delivery</p>
+          <p>Est. Delivery: 30min</p>
         </div>
-        <div>
+        <div onClick={(e)=>handleClick(e,index)}>
           <h1>></h1>
         </div>
       </div>

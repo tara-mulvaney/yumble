@@ -1,8 +1,8 @@
 const express = require('express');
 const { Restaurant, Review, Cuisine } = require('./models');
 const app = express();
+const PORT = process.env.PORT || 5000
 
-const PORT = process.env.PORT || 3000
 
 app.get('/', async (request, response) => {
   try {
@@ -15,7 +15,7 @@ app.get('/', async (request, response) => {
 //GET ALL
 app.get('/restaurants', async (request, response) => {
   try {
-    const restaurants = await Restaurant.findAll();
+    const restaurants = await Restaurant.findAll({include:[Cuisine]});
     response.json({
       restaurants
     })
@@ -91,4 +91,4 @@ app.put('/restaurants/:id', async (req, res) => {
 
 
 
-app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
+app.listen(PORT, () => console.log(`App listening on port ${PORT}!`))

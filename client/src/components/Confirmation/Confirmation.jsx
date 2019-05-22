@@ -4,7 +4,7 @@ import './confirmation.css';
 function Confirmation() {
   return (
     <div>
-      <h1 className="banner">Thank you!</h1>
+      <h1 className="confirmation-banner">Thank you!</h1>
       <div className="confirmation-box">
         <h3>Your order will arrive shortly.</h3>
       </div>

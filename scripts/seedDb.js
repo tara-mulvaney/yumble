@@ -103,52 +103,52 @@ const motorinoMenu10 = await Cuisine.create({
   price: 20.50
 })
 
-const missionMenu1 = await Menu.create({
+const missionMenu1 = await Cuisine.create({
   food: 'Iced Sichuan Water Pickles',
   price: 8
 })
 
-const missionMenu2 = await Menu.create({
+const missionMenu2 = await Cuisine.create({
   food: 'Chongqing Chicken Wings W/XXX Spices',
   price: 16
 })
 
-const missionMenu3 = await Menu.create({
+const missionMenu3 = await Cuisine.create({
   food: 'Salt Cod Fried Rice',
   price: 16
 })
 
-const missionMenu4 = await Menu.create({
+const missionMenu4 = await Cuisine.create({
   food: 'Green Tea Noodles',
   price: 12
 })
 
-const missionMenu5 = await Menu.create({
+const missionMenu5 = await Cuisine.create({
   food: 'Hot And Sour Rice Cakes',
   price: 17
 })
 
-const missionMenu6 = await Menu.create({
+const missionMenu6 = await Cuisine.create({
   food: 'Dan Dan Ramen',
   price: 18
 })
 
-const missionMenu7 = await Menu.create({
+const missionMenu7 = await Cuisine.create({
   food: 'Drunken Noodles',
   price: 18
 })
 
-const missionMenu8 = await Menu.create({
+const missionMenu8 = await Cuisine.create({
   food: 'Hainan Style Crab Rice',
   price: 30
 })
 
-const missionMenu9 = await Menu.create({
+const missionMenu9 = await Cuisine.create({
   food: 'Lobster Fried Rice',
   price: 30
 })
 
-const missionMenu10 = await Menu.create({
+const missionMenu10 = await Cuisine.create({
   food: 'Turmeric Lamb Rice',
   price: 20
 })
