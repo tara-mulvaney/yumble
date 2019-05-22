@@ -1,6 +1,7 @@
 import React from "react";
 import "./Menu.css";
-
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 import starRating from "../../assets/star-rating.png";
 import toast from "../../assets/torrrzt.png";
 import cake from "../../assets/cayke.png";
@@ -8,18 +9,21 @@ import donut from "../../assets/jamdonut.png";
 import crepe from "../../assets/crepe.png";
 import mille from "../../assets/millefeuille.png";
 
-function Menu() {
+function Menu(props) {
+  const {index,cuisines,addToCart,displayTotalPrice,history,data} = props
+  console.log(data[index].name);
   return (
     <div>
-      <header className="banner" />
-      <div className="box-1">
-        <div className="profile">
-          <h1>Maison Kayser</h1>
+      <Header/>
+      <div className="menu-box-1">
+      <button onClick={()=>history.push("/restaurantlist")}>&#60;</button>
+        <div className="menu-profile">
+          <h1>{data[index].name}</h1>
         </div>
-        <div className="flex-around">
-          <img src={starRating} alt="" className="star-rating-image" />
+        <div className="menu-flex-around">
+          <img src={starRating} alt="" className="menu-star-rating-image" />
         </div>
-        <div className="flex">
+        <div className="menu-flex">
           <p>
             {" "}
             <img src={toast} alt="" className="menu-image" />{" "}
@@ -41,34 +45,34 @@ function Menu() {
             <img src={mille} alt="" className="menu-image" />{" "}
           </p>
         </div>
-        <div className="flex-menu-buttons">
+        <div className="menu-flex-menu-buttons">
           <p>
             {" "}
             $8
-            <button className="quick-add-button"> + Add </button>
+            <button className="menu-quick-add-button"> + Add </button>
           </p>
           <p>
             {" "}
             $8
-            <button className="quick-add-button"> + Add </button>
+            <button className="menu-quick-add-button"> + Add </button>
           </p>
           <p>
             {" "}
             $8
-            <button className="quick-add-button"> + Add </button>
+            <button className="menu-quick-add-button"> + Add </button>
           </p>
           <p>
             {" "}
             $8
-            <button className="quick-add-button"> + Add </button>
+            <button className="menu-quick-add-button"> + Add </button>
           </p>
           <p>
             {" "}
             $8
-            <button className="quick-add-button"> + Add </button>
+            <button className="menu-quick-add-button"> + Add </button>
           </p>
         </div>
-        <div class="flex">
+        <div className="menu-flex">
           <p>Avocado Toast</p>
           <p>Chocolate Cake</p>
           <p>Jam Donut</p>
@@ -76,173 +80,23 @@ function Menu() {
           <p>Millefeuille</p>
         </div>
       </div>
-      <div class="box-1">
-        <h2>Pastries</h2>
-        <div class="flex-around">
-          <div class="flex-column">
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-          </div>
-          <div class="flex-column">
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-          </div>
-          <div class="flex-column">
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-          </div>
-          <div class="flex-column">
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
+      <div className="menu-box-1">
+        <h2>Main</h2>
+        <div className="menu-flex-around">
+          <div className="menu-flex-column">
+          {cuisines ? (
+            cuisines.map((cuisine,index) => {
+              return (
+                <div><p className="menu-item-spacing">{cuisine.food}</p>
+                <p>
+                  ${cuisine.price} <button className="menu-item-button" onClick={(e)=>addToCart(e,index)}> + </button>
+                </p></div>
+              );
+            })):null}
           </div>
         </div>
       </div>
-      <div class="box-1">
-        <h2>Mains</h2>
-        <div class="flex-around">
-          <div class="flex-column">
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-          </div>
-          <div class="flex-column">
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-          </div>
-          <div class="flex-column">
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-          </div>
-          <div class="flex-column">
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="box-1">
-        <h2>Desserts</h2>
-        <div class="flex-around">
-          <div class="flex-column">
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-          </div>
-          <div class="flex-column">
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-          </div>
-          <div class="flex-column">
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-            <p className="menu-item-spacing">Menu Item</p>
-          </div>
-          <div class="flex-column">
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-            <p>
-              $8 <button className="menu-item-button"> + </button>
-            </p>
-          </div>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }

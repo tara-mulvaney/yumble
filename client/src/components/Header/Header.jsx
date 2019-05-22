@@ -10,6 +10,9 @@ function Header() {
       <Link to="/">
 	      <img src={logo} className="home-logo" alt="" />
       </Link>
+      <Link to="/cart">
+		    <p>Cart</p>
+      </Link>
       </div>
     </div>
   );

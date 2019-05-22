@@ -12,7 +12,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div className="home-body">
         <div className="parent">
           <div className="left">
             <h1 className="home-h-one">

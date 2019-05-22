@@ -1,10 +1,12 @@
 import React from "react";
 import './cart.css';
 
-function Cart() {
+function Cart(props) {
+  const {cart,displayTotalPrice,history,clearCart} = props
   return (
     <div>
-      <h1 className="banner">Bill</h1>
+      <button onClick={()=>history.push("/menu")}>&#60;</button>
+      <h1 className="cart-banner">Bill</h1>
       <div className="cart-box">
 	      <button>Pick-up</button>
 	      <button>Delivery</button>
@@ -24,8 +26,15 @@ function Cart() {
       <div className="cart-box">
 	      <h3>FOOD ITEMS</h3>
 	      <div className="cart-box">
-		      <p>Cheese Croissant</p>
-		      <p>$17.15</p>
+          {cart.length ? (
+            cart.map((item,index) => {
+              return (
+                <div>
+                  <p>{item[0]}</p>
+                  <p>{item[1]}</p>
+                </div>
+              );
+            })):<p>Cart is empty</p>}
 	      </div>
       </div>
       <div className="cart-box">
@@ -42,8 +51,8 @@ function Cart() {
 	      </form>
       </div>
       <div>
-	      <h2>Total: $23.95</h2>
-	      <button>Pay Now</button>      	
+	      <h2>Total: ${displayTotalPrice()}</h2>
+	      <button onClick={(e)=>{clearCart(e);history.push("/confirmation")}}>Pay Now</button>      	
       </div>
     </div>
   );
