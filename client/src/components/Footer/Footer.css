@@ -1,6 +1,6 @@
 .footer-flex-around {
-  height: 200px;
-  width: 100vw;
+  height: 150px;
+  width: 100%;
   background-color: #f87060;
   display: flex;
   justify-content: left;
@@ -11,6 +11,7 @@ a {
   text-decoration: none;
   color: #ced6d6;
 }
+
 
 .footer-flex-column {
   display: flex;

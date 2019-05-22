@@ -1,7 +1,7 @@
 import React from "react";
 import "./Menu.css";
-import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 import starRating from "../../assets/star-rating.png";
 import toast from "../../assets/torrrzt.png";
 import cake from "../../assets/cayke.png";
@@ -10,17 +10,29 @@ import crepe from "../../assets/crepe.png";
 import mille from "../../assets/millefeuille.png";
 
 function Menu(props) {
-  const {index,cuisines,addToCart,displayTotalPrice,history,data} = props
+  const {
+    index,
+    cuisines,
+    addToCart,
+    displayTotalPrice,
+    history,
+    data
+  } = props;
   console.log(data[index].name);
   return (
     <div>
-      <Header/>
+      <Header />
       <div className="menu-box-1">
-      <button onClick={()=>history.push("/restaurantlist")}>&#60;</button>
+        <button
+          className="back-button"
+          onClick={() => history.push("/restaurantlist")}
+        >
+          Back
+        </button>
         <div className="menu-profile">
           <h1>{data[index].name}</h1>
         </div>
-        <div className="menu-flex-around">
+        <div className="menu-flex-around-rating">
           <img src={starRating} alt="" className="menu-star-rating-image" />
         </div>
         <div className="menu-flex">
@@ -84,15 +96,25 @@ function Menu(props) {
         <h2>Main</h2>
         <div className="menu-flex-around">
           <div className="menu-flex-column">
-          {cuisines ? (
-            cuisines.map((cuisine,index) => {
-              return (
-                <div><p className="menu-item-spacing">{cuisine.food}</p>
-                <p>
-                  ${cuisine.price} <button className="menu-item-button" onClick={(e)=>addToCart(e,index)}> + </button>
-                </p></div>
-              );
-            })):null}
+            {cuisines
+              ? cuisines.map((cuisine, index) => {
+                  return (
+                    <div className="menu-item-spacing">
+                      <p>{cuisine.food}</p>
+                      <p>
+                        ${cuisine.price}{" "}
+                        <button
+                          className="menu-item-button"
+                          onClick={e => addToCart(e, index)}
+                        >
+                          {" "}
+                          +{" "}
+                        </button>
+                      </p>
+                    </div>
+                  );
+                })
+              : null}
           </div>
         </div>
       </div>

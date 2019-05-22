@@ -3,8 +3,14 @@
 .home-logo {
     width: 180px;
     height: 100px;
+    margin: 10px;
 }
 
 .header {
 	background-color: #f87060;
+}
+
+i {
+    margin: 10px;
+    text-shadow: black 1px 1px 1px;
 }
