@@ -3,7 +3,7 @@
   width: 100%;
   background-color: #f87060;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   color: #ced6d6;
 }
 
@@ -12,17 +12,17 @@ a {
   color: #ced6d6;
 }
 
+a:hover {
+  text-decoration: underline;
+}
 
 .footer-flex-column {
   display: flex;
   flex-direction: column;
-  margin: 0px 100px 0px 50px;
+  justify-content: flex-start;
+  margin-left: 90px;
 }
 
 h1 {
   text-align: center;
-}
-
-h2 {
-  margin: 15px;
 }

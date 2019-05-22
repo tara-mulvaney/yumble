@@ -11,9 +11,9 @@ class RestaurantProfile extends Component {
       <div className="restaurant-list">
         <img src={restaurant.photo} alt=" " />
         <div className="restaurant-flex-column">
-          <p>{restaurant.name}</p>
-          <p> $ </p>
-          <p>Est. Delivery: 30min</p>
+          <p className="restaurant-name">{restaurant.name}</p>
+          <p className="restaurant-price"> $ </p>
+          <p className="restaurant-deliv">Est. Delivery: 30min</p>
         </div>
         <div className="restaurant-click" onClick={(e)=>handleClick(e,index)}>
           <h1>></h1>

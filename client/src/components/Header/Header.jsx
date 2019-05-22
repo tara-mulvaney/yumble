@@ -7,12 +7,14 @@ function Header() {
   return (
     <div>
       <div className="header">
-      <Link to="/">
-	      <img src={logo} className="home-logo" alt="" />
-      </Link>
-      <Link to="/cart">
-		    <i className="fas fa-shopping-cart fa-3x"></i>
-      </Link>
+      <div className="cart-icon-flex">
+        <Link to="/">
+          <img src={logo} className="home-logo" alt="" />
+        </Link>
+        <Link to="/cart">
+            <i className="fas fa-shopping-cart fa-3x" />
+        </Link>
+        </div>
       </div>
     </div>
   );
