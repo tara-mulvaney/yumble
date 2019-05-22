@@ -1,5 +1,6 @@
 import React from "react";
 import "./cart.css";
+import Footer from '../Footer/Footer'
 
 function Cart(props) {
   const {cart,displayTotalPrice,history,clearCart} = props
@@ -82,11 +83,14 @@ function Cart(props) {
           </li>
         </ul>
       </div>
+      <br/>
       <div className="total-pay">
         <h2>Total: ${displayTotalPrice()}</h2>
         <button onClick={(e)=>{clearCart(e);history.push("/confirmation")}}>Pay Now</button>
       </div>
     </div>
+    <br/><br/>
+    <Footer />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./confirmation.css";
+import Footer from '../Footer/Footer'
 
 function Confirmation(props) {
   const {history} = props
