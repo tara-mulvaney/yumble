@@ -1,4 +1,4 @@
-const { Restaurant, Review } = require('../models.js')
+const { Restaurant, Review, Cuisine } = require('../models.js')
 
 async function main() {
 
@@ -9,6 +9,10 @@ async function main() {
   });
 
   await Review.destroy({
+    where: {}
+  });
+
+  await Cuisine.destroy({
     where: {}
   });
 
@@ -49,36 +53,67 @@ async function main() {
     photo: 'https://media1.fdncms.com/clevescene/imager/u/original/18743642/shake_shack_burgers.jpg'
   })
 
-  /* add review seed data */
+  const motorinoMenu1 = await Cuisine.create({
+  food: 'Mixed Greens Salad',
+  price: 8.50
+})
 
-  const review01 = await Review.create({
-    description: "The service wasn't great, but oh my, the pizza was arguably THE BEST we have ever had in NYC."
-  })
+const motorinoMenu2 = await Cuisine.create({
+  food: 'Salumi Plate',
+  price: 14.50
+})
 
-  const review02 = await Review.create({
-    description: "It's not pretty, but the experience is truly old New York greatness."
-  })
+const motorinoMenu3 = await Cuisine.create({
+  food: `Motorino's Meatballs`,
+  price: 14.50
+})
 
-  const review03 = await Review.create({
-    description: "This place is good but not amazing."
-  })
+const motorinoMenu4 = await Cuisine.create({
+  food: 'Octopus Salad',
+  price: 16.50
+})
 
-  const review04 = await Review.create({
-    description: "We ordered the pork belly buns as an appetizer. Yummy for sure--the pork belly was appropriately tender."
-  })
+const motorinoMenu5 = await Cuisine.create({
+  food: 'Marinara Pizza',
+  price: 12.50
+})
 
-  const review05 = await Review.create({
-    description: "The burger was EVERYTHING! It was seriously one of the best hamburgers I have ever had."
-  })
+const motorinoMenu6 = await Cuisine.create({
+  food: 'Margherita Pizza',
+  price: 18.50
+})
 
-  /* ddd review seed data */
+const motorinoMenu7 = await Cuisine.create({
+  food: 'Del Popolo Pizza',
+  price: 19.50
+})
 
-  await review01.setRestaurant(motorino)
-  await review04.setRestaurant(momofuku)
-  await review03.setRestaurant(mission)
-  await review02.setRestaurant(eisenberg)
-  await review05.setRestaurant(shake)
+const motorinoMenu8 = await Cuisine.create({
+  food: 'Cherrystone Clam Pizza',
+  price: 22
+})
 
+const motorinoMenu9 = await Cuisine.create({
+  food: 'Cremini Mushroom Pizza',
+  price: 20.50
+})
+
+const motorinoMenu10 = await Cuisine.create({
+  food: 'Brussels Sprout',
+  price: 20.50
+})
+
+await motorinoMenu1.setRestaurant(motorino)
+await motorinoMenu2.setRestaurant(motorino)
+await motorinoMenu3.setRestaurant(motorino)
+await motorinoMenu4.setRestaurant(motorino)
+await motorinoMenu5.setRestaurant(motorino)
+await motorinoMenu6.setRestaurant(motorino)
+await motorinoMenu7.setRestaurant(motorino)
+await motorinoMenu8.setRestaurant(motorino)
+await motorinoMenu9.setRestaurant(motorino)
+await motorinoMenu10.setRestaurant(motorino)
+  
 }
 
 async function run() {
