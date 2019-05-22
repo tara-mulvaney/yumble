@@ -9,7 +9,7 @@ function Header() {
       <div className="header">
       <div className="cart-icon-flex">
         <Link to="/">
-          <img src={logo} className="home-logo" alt="" />
+          <img src={logo} className="home-logo-header" alt="" />
         </Link>
         <Link to="/cart">
             <i className="fas fa-shopping-cart fa-3x" />
