@@ -22,14 +22,17 @@ function Cart(props) {
       <div className="cart-box">
         <form>
           <h3>DELIVERY TIME</h3>
+          <div className="delivery-time">
           <select>
             <option value="30">30 min</option>
             <option value="45">45 min</option>
             <option value="60">60 min</option>
           </select>
+          </div>
         </form>
+        <div className="price-render">
         <h3>PRICE</h3>
-        <p>$1.50</p>
+        <p className="price-item">$1.50</p>
       </div>
       <div className="cart-box">
         <h3>FOOD ITEMS</h3>
@@ -42,12 +45,13 @@ function Cart(props) {
                   <p>{item[1]}</p>
                 </div>
               );
-            })):<p>Cart is empty</p>}
+            })):
+            <p className="cart-list">Cart is empty</p>}
         </div>
       </div>
       <div className="cart-box">
         <h3>YUMBLE FEE</h3>
-        <p>$1.20</p>
+        <p className="yumble-fee">$1.20</p>
       </div>
       <div className="cart-box">
         <h3>DELIVERY TIP</h3>
@@ -77,10 +81,11 @@ function Cart(props) {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="total-pay">
         <h2>Total: ${displayTotalPrice()}</h2>
         <button onClick={(e)=>{clearCart(e);history.push("/confirmation")}}>Pay Now</button>
       </div>
+    </div>
     </div>
   );
 }

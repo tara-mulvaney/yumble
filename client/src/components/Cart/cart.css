@@ -66,9 +66,6 @@ body {
   color: white;
 }
 
-/* .confirmation-box {
-  border-bottom: 1px black solid;
-} */
 
 label {
   font-size: 25px;
@@ -82,6 +79,8 @@ h3 {
   list-style-type: none;
   margin: 25px 0 0 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .delivery-tip li {
@@ -122,6 +121,7 @@ h3 {
   border: none;
   opacity: 0.5;
   padding: 5px;
+
 }
 
 .delivery-tip label:hover {
@@ -187,6 +187,36 @@ select {
   height: 50px;
   border: solid 2px #f87060;
   outline: none;
+  display: flex;
+  justify-content: center;
+}
+
+.delivery-time {
+  display: flex;
+  justify-content: center;
+}
+
+.price-render {
+  display: flex;
+  justify-content: center;
+}
+
+.cart-list{
+  display: flex;
+  justify-content: center;
+}
+
+.price-item {
+  display: flex;
+  justify-content: center;
+}
+
+.yumble-fee {
+  display: flex;
+  justify-content: center;
+}
+
+.total-pay {
   display: flex;
   justify-content: center;
 }
