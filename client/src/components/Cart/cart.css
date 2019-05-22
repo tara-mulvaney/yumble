@@ -6,14 +6,20 @@ body {
   color: #685353;
 }
 
-.cart-banner h1 {
+.cart-banner {
   font-size: 80px;
+  padding: 10px;
 }
 
 .main-cart-box {
   display: flex;
   justify-content: center;
   flex-direction: row;
+}
+
+.back-button-cart {
+  margin: -20px 0px 0px 10px;
+  font-size: 24px;
 }
 
 .cart-button {
