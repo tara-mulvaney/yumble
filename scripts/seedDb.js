@@ -1,4 +1,4 @@
-const { Restaurant, Menu } = require('../models.js')
+const { Restaurant, Review, Cuisine } = require('../models.js')
 
 async function main() {
 
@@ -9,6 +9,10 @@ async function main() {
   });
 
   await Review.destroy({
+    where: {}
+  });
+
+  await Cuisine.destroy({
     where: {}
   });
 
@@ -49,52 +53,52 @@ async function main() {
     photo: 'https://media1.fdncms.com/clevescene/imager/u/original/18743642/shake_shack_burgers.jpg'
   })
 
-  const motorinoMenu1 = await Menu.create({
+  const motorinoMenu1 = await Cuisine.create({
   food: 'Mixed Greens Salad',
   price: 8.50
 })
 
-const motorinoMenu2 = await Menu.create({
+const motorinoMenu2 = await Cuisine.create({
   food: 'Salumi Plate',
   price: 14.50
 })
 
-const motorinoMenu3 = await Menu.create({
+const motorinoMenu3 = await Cuisine.create({
   food: `Motorino's Meatballs`,
   price: 14.50
 })
 
-const motorinoMenu4 = await Menu.create({
+const motorinoMenu4 = await Cuisine.create({
   food: 'Octopus Salad',
   price: 16.50
 })
 
-const motorinoMenu5 = await Menu.create({
+const motorinoMenu5 = await Cuisine.create({
   food: 'Marinara Pizza',
   price: 12.50
 })
 
-const motorinoMenu6 = await Menu.create({
+const motorinoMenu6 = await Cuisine.create({
   food: 'Margherita Pizza',
   price: 18.50
 })
 
-const motorinoMenu7 = await Menu.create({
+const motorinoMenu7 = await Cuisine.create({
   food: 'Del Popolo Pizza',
   price: 19.50
 })
 
-const motorinoMenu8 = await Menu.create({
+const motorinoMenu8 = await Cuisine.create({
   food: 'Cherrystone Clam Pizza',
   price: 22
 })
 
-const motorinoMenu9 = await Menu.create({
+const motorinoMenu9 = await Cuisine.create({
   food: 'Cremini Mushroom Pizza',
   price: 20.50
 })
 
-const motorinoMenu10 = await Menu.create({
+const motorinoMenu10 = await Cuisine.create({
   food: 'Brussels Sprout',
   price: 20.50
 })
@@ -170,12 +174,6 @@ await missionMenu7.setRestaurant(mission)
 await missionMenu8.setRestaurant(mission)
 await missionMenu9.setRestaurant(mission)
 await missionMenu10.setRestaurant(mission)
-
-
-
-
-
-
   
 }
 

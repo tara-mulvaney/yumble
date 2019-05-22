@@ -1,17 +1,15 @@
 import React, { Component } from "react";
 import "./Home.css";
 import logo from "../Home/yumble_logo.png";
-
-// import { Redirect } from "react-router-dom";
-
-// import RestaurantList from "../RestaurantList/RestaurantList";
+import { Redirect } from "react-router-dom";
 
 class Home extends Component {
-  // handleSubmit(e) {
-  //   if (e.key === "Enter") {
-  //     return <Redirect to="/" />;
-  //   }
-  // }
+  
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.history.push("/restaurantlist")
+  }
+
   render() {
     return (
       <div>
@@ -23,12 +21,13 @@ class Home extends Component {
           </div>
           <div className="right">
             <div className="searchbar">
-              <input
-                type="text"
-                id="searchLocation"
-                placeholder="Delivery Address"
-                // onKeyPress={e => this.handleSubmit(e)}
-              />
+              <form onSubmit={(e)=>this.handleSubmit(e)}>
+                <input
+                  type="text"
+                  id="searchLocation"
+                  placeholder="Delivery Address"
+                />
+              </form>
             </div>
           </div>
         </div>

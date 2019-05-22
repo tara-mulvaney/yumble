@@ -1,12 +1,15 @@
 import React from "react";
-import LogInInput from "../Header/LogInInput";
 import "./Header.css";
+import logo from "../Home/yumble_logo.png";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div>
       <div className="header">
-        <LogInInput />
+      <Link to="/">
+	      <img src={logo} className="home-logo" alt="" />
+      </Link>
       </div>
     </div>
   );

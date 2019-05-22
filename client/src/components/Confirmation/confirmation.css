@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
+body {
+  background-color: white;
+  font-family: 'Inconsolata', monospace;
+  color: #685353;
+}
+
+h1{
+	font-size: 80px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 14px;
+    background-color: #f87060;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+
+button:hover{
+	cursor:pointer;
+}
+
+.banner {
+  height: 100px;
+  width: 100vw;
+  background-color: #f87060;
+  color:white;
+}
+
+label{
+	font-size:25px;
+}
+
+h3{
+	font-size:25px;
+}

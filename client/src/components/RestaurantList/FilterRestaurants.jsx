@@ -1,39 +1,40 @@
 import React from "react";
-import "./RestaurantList.css";
+import "./FilterRestaurants.css";
 
-import RestaurantProfile from '../../components/RestaurantProfile/RestaurantProfile';
-import StarRating from "../../components/RestaurantList/StarRating";
+import RestaurantProfile from "../../components/RestaurantProfile/RestaurantProfile";
+// import StarRating from "../../components/RestaurantList/StarRating";
 
 function FilterRestaurants() {
   return (
     <main>
-      <div className="restaurant-list">
-      <RestaurantProfile />
-      <RestaurantProfile />
-      <RestaurantProfile />
-      <RestaurantProfile />
-      <RestaurantProfile />
-      <RestaurantProfile />
-        <div className="search" />
+      <div>
+        <div className="search-restaurants">
+          <input type="text" name="search-restaurants" placeholder="Search restaurants" />
+        </div>
+        <RestaurantProfile />
+        <RestaurantProfile />
+        <RestaurantProfile />
+        <RestaurantProfile />
+        <RestaurantProfile />
+        <RestaurantProfile />
       </div>
       <div className="filter">
         <h1>Filter</h1>
         <div className="flex">
           <p>Price</p>
           {/* <StarRating /> */}
-          <p>$</p>
-          <p>$$</p>
-          <p>$$$</p>
+          <button className="filter-price">$</button>
+          <button className="filter-price">$$</button>
+          <button className="filter-price">$$$</button>
         </div>
         <div className="flex">
           <p>Rating</p>
-          
         </div>
         <div className="flex">
           <p>Est Time</p>
-          <p>30</p>
-          <p>45</p>
-          <p>60</p>
+          <button className="delivery-time">30</button>
+          <button className="delivery-time">45</button>
+          <button className="delivery-time">60</button>
         </div>
         <div className="flex-around">
           <button>PICKUP</button>

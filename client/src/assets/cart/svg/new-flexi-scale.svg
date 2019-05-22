@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="80" viewBox="0 0 104 80">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#685353" font-family="CenturyGothic, Century Gothic" font-size="20" opacity=".5" transform="translate(0 -5)">
+            <tspan x="10" y="20">30</tspan>
+        </text>
+        <text fill="#685353" font-family="CenturyGothic, Century Gothic" font-size="20" opacity=".5" transform="translate(0 -5)">
+            <tspan x="10" y="84">60</tspan>
+        </text>
+        <path stroke="#685353" d="M.5 23.5h39v33H.5z" opacity=".492"/>
+        <text fill="#685353" font-family="CenturyGothic, Century Gothic" font-size="25" transform="translate(0 -5)">
+            <tspan x="45" y="51">mins.</tspan>
+        </text>
+        <text fill="#685353" font-family="CenturyGothic, Century Gothic" font-size="25" transform="translate(0 -5)">
+            <tspan x="6" y="53">45</tspan>
+        </text>
+    </g>
+</svg>
