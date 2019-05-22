@@ -3,6 +3,8 @@
 .menu-body {
   margin: 0;
   padding: 0;
+  background-color: white;
+  font-family: "Inconsolata", monospace;
 }
 
 .menu-banner {
@@ -26,17 +28,21 @@
 
 h1 {
   text-align: center;
+  margin-top: -10px;
+}
+
+.back-button {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
 }
 
 .menu-box-1 {
   display: flex;
   flex-direction: column;
   border-bottom: solid #ced6d6;
-}
-
-.menu-body {
-  background-color: white;
-  font-family: "Inconsolata", monospace;
 }
 
 .menu-main {
@@ -49,9 +55,12 @@ h1 {
 }
 
 .menu-flex-column {
-  display: flex;
-  flex-direction: column;
   margin: 10px 100px 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  justify-content: space-between;
+  margin-left: 250px;
 }
 
 .menu-flex-menu-buttons {
@@ -97,6 +106,12 @@ h1 {
 .menu-flex-around {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.menu-flex-around-rating {
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
@@ -120,8 +135,12 @@ p {
 .menu-star-rating-image {
   width: 150px;
   height: 26px;
+  margin-top: -20px;
 }
 
 .menu-item-spacing {
-  line-height: 1.8;
+  line-height: 2.5;
+  display: flex;
 }
+
+
