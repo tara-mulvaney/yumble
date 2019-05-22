@@ -1,7 +1,8 @@
 import React from "react";
 import "./confirmation.css";
 
-function Confirmation() {
+function Confirmation(props) {
+  const {history} = props
   return (
     <div>
       <h1 className="confirmation-banner">Are you ready to Yumble!!</h1>
@@ -10,7 +11,7 @@ function Confirmation() {
       </div>
       <div className="button-wrapper">
         
-        <button className="return-button">Return Home</button>
+        <button onClick={()=>history.push("/restaurantlist")} className="return-button">Return Home</button>
       </div>
     </div>
   );
