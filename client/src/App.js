@@ -6,14 +6,15 @@ import Footer from "./components/Footer/Footer";
 // import Home from "./components/Home/Home";
 import Header from "./components/Header/Header";
 // import RestaurantList from "./components/RestaurantList/RestaurantList";
-import Menu from "./components/RestaurantProfile/Menu";
+// import Menu from "./components/RestaurantProfile/Menu";
+import Cart from "./components/Cart/Cart";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
-      <Menu />
+      <Cart />
       <Footer />
       </div>
     );
