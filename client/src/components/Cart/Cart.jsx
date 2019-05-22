@@ -14,7 +14,7 @@ function Cart(props) {
             <label for="pickup">PICK UP</label>
           </li>
           <li>
-            <input type="radio" id="delivery" name="delivery" />
+            <input type="radio" id="delivery" name="pickup" />
             <label for="delivery">Delivery</label>
           </li>
         </ul>
@@ -31,16 +31,17 @@ function Cart(props) {
           </div>
         </form>
         <div className="price-render">
-        <h3>PRICE</h3>
-        <p className="price-item">$1.50</p>
-      </div>
+          <h3>PRICE</h3>
+          <p>$1.50</p>
+        </div>
+
       <div className="cart-box">
         <h3>FOOD ITEMS</h3>
         <div className="cart-box">
           {cart.length ? (
             cart.map((item,index) => {
               return (
-                <div>
+                <div className="cart-list">
                   <p>{item[0]}</p>
                   <p>{item[1]}</p>
                 </div>
