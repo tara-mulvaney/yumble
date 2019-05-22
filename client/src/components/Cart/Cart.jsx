@@ -5,8 +5,8 @@ function Cart(props) {
   const {cart,displayTotalPrice,history,clearCart} = props
   return (
     <div>
-      <button onClick={()=>history.push("/menu")}>&#60;</button>
       <h1 className="cart-banner">Bill</h1>
+      <button className="back-button-cart" onClick={()=>history.push("/menu")}>Back</button>
       <div className="main-cart-box">
         <ul className="pick-deliv">
           <li>
@@ -15,7 +15,7 @@ function Cart(props) {
           </li>
           <li>
             <input type="radio" id="delivery" name="pickup" />
-            <label for="delivery">Delivery</label>
+            <label for="delivery">DELIVERY</label>
           </li>
         </ul>
       </div>
