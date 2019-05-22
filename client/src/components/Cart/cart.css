@@ -2,43 +2,191 @@
 
 body {
   background-color: white;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   color: #685353;
 }
 
-h1{
-	font-size: 80px;
+.cart-banner h1 {
+  font-size: 80px;
 }
 
-button {
-    width: 100px;
-    height: 50px;
-    border-radius: 14px;
-    background-color: #f87060;
-    color: white;
-    font-size: 18px;
-    border: none;
+.main-cart-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
-button:hover{
-	cursor:pointer;
+.cart-button {
+  width: 100px;
+  height: 50px;
+  border-radius: 14px;
+  background-color: #f87060;
+  color: white;
+  font-size: 18px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  outline: none;
+  opacity: 0.5;
 }
 
-.banner {
+.cart-button:hover {
+  opacity: 1;
+}
+
+.cart-button:focus {
+  opacity: 1;
+}
+
+.pay-button {
+  width: 100px;
+  height: 50px;
+  border-radius: 14px;
+  background-color: #f87060;
+  color: white;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  opacity: 0.5;
+}
+
+.pay-button:hover {
+  opacity: 1;
+}
+
+.cart-button:hover {
+  cursor: pointer;
+}
+
+.cart-banner {
   height: 100px;
   width: 100vw;
   background-color: #f87060;
-  color:white;
+  color: white;
 }
 
-.confirmation-box{
-	border-bottom: 1px black solid;
+.confirmation-box {
+  border-bottom: 1px black solid;
 }
 
-label{
-	font-size:25px;
+label {
+  font-size: 25px;
 }
 
-h3{
-	font-size:25px;
+h3 {
+  font-size: 25px;
+}
+
+.delivery-tip {
+  list-style-type: none;
+  margin: 25px 0 0 0;
+  padding: 0;
+}
+
+.delivery-tip li {
+  float: left;
+  margin: 0 5px 0 0;
+  width: 100px;
+  height: 40px;
+  position: relative;
+}
+
+.delivery-tip label,
+.delivery-tip input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.delivery-tip input[type="radio"] {
+  opacity: 0.011;
+  z-index: 100;
+}
+
+.delivery-tip input[type="radio"]:checked + label {
+  border: none;
+  opacity: 1;
+}
+
+.delivery-tip label {
+  width: 82px;
+  height: 20px;
+  border-radius: 14px;
+  background-color: #f87060;
+  color: white;
+  font-size: 16px;
+  border: none;
+  opacity: 0.5;
+  padding: 5px;
+}
+
+.delivery-tip label:hover {
+  opacity: 1;
+}
+/*  */
+.pick-deliv {
+  list-style-type: none;
+  margin: 25px 0 0 0;
+  padding: 0;
+}
+
+.pick-deliv li {
+  float: left;
+  margin: 0 5px 0 0;
+  width: 100px;
+  height: 40px;
+  position: relative;
+}
+
+.pick-deliv label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.pick-deliv input[type="radio"] {
+  opacity: 0.011;
+  z-index: 100;
+}
+
+.pick-deliv input[type="radio"]:checked + label {
+  border: none;
+  opacity: 1;
+}
+
+.pick-deliv label {
+  width: 82px;
+  height: 20px;
+  border-radius: 14px;
+  background-color: #f87060;
+  color: white;
+  font-size: 16px;
+  border: none;
+  opacity: 0.5;
+  padding: 5px;
+}
+
+.pick-deliv label:hover {
+  opacity: 1;
+}
+
+label {
+  text-align: center;
+}
+
+select {
+  border: none;
+  width: 100px;
+  height: 50px;
+  border: solid 2px #f87060;
+  outline: none;
+  display: flex;
+  justify-content: center;
 }

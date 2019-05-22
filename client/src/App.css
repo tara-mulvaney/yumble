@@ -1,12 +1,20 @@
 /* .App {
   text-align: center;
 }
+*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  background-color: black;
+  padding: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:hover {
+color: #f87060;
+}

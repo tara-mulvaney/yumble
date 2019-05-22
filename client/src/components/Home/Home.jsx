@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Home.css";
 import logo from "../Home/yumble_logo.png";
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 
 class Home extends Component {
   

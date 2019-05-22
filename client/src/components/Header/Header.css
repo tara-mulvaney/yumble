@@ -3,4 +3,12 @@
 .home-logo {
     width: 180px;
     height: 100px;
+    margin: 10px;
+    background-color: #F87060;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #F87060;
 }

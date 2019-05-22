@@ -9,7 +9,11 @@ function FilterRestaurants() {
     <main>
       <div>
         <div className="search-restaurants">
-          <input type="text" name="search-restaurants" placeholder="Search restaurants" />
+          <input
+            type="text"
+            name="search-restaurants"
+            placeholder="Search restaurants"
+          />
         </div>
         <RestaurantProfile />
         <RestaurantProfile />
@@ -36,21 +40,21 @@ function FilterRestaurants() {
           <button className="delivery-time">45</button>
           <button className="delivery-time">60</button>
         </div>
-        <div className="flex-around">
+        <div className="flex-around-pickup-delivery">
           <button>PICKUP</button>
           <button>DELIVERY</button>
         </div>
-        <div className="flex-around">
+        <div className="flex-around-dietary">
           <p>Dietary Needs</p>
           <p> + </p>
         </div>
-        <div className="flex-around">
+        <div className="flex-around-cuisine">
           <p>Cuisine</p>
           <p> + </p>
         </div>
-        <div className="flex-around">
+        <div className="flex-around-search">
           <button>
-            <h1>Search</h1>
+            <h1 className="filter-search">Search</h1>
           </button>
         </div>
       </div>
