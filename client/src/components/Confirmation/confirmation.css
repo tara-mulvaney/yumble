@@ -18,10 +18,22 @@ button {
     color: white;
     font-size: 18px;
     border: none;
+    font-family: 'Inconsolata';
+    
+    
+}
+
+.return-button {
+  display: flex;
+  justify-content: center;
 }
 
 button:hover{
 	cursor:pointer;
+}
+.button-wrapper{
+  display:flex;
+  justify-content: center;
 }
 
 .confirmation-banner {
@@ -29,6 +41,7 @@ button:hover{
   width: 100vw;
   background-color: #f87060;
   color:white;
+  margin: auto;
 }
 
 label{
@@ -36,5 +49,6 @@ label{
 }
 
 h3{
-	font-size:25px;
+  font-size:50px;
+  text-align: center;
 }
