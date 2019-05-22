@@ -1,4 +1,4 @@
-footer .flex-around {
+.footer-flex-around {
   height: 200px;
   width: 100vw;
   background-color: #f87060;
@@ -12,7 +12,7 @@ a {
   color: #ced6d6;
 }
 
-.flex-column {
+.footer-flex-column {
   display: flex;
   flex-direction: column;
   margin: 0px 100px 0px 50px;
