@@ -11,7 +11,7 @@ function Header() {
 	      <img src={logo} className="home-logo" alt="" />
       </Link>
       <Link to="/cart">
-		    <p>Cart</p>
+		    <i class="fas fa-shopping-cart fa-5x"></i>
       </Link>
       </div>
     </div>

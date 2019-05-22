@@ -56,12 +56,6 @@ class App extends Component {
   	const {handleClick,addToCart,clearCart,displayTotalPrice} = this
     return (
       <div className="App">
-	      <Link to="/">Home</Link>
-	      <Link to="/restaurantlist">RestaurantList</Link>
-	      <Link to="/menu">Menu</Link>
-	      <Link to="/cart">Cart</Link>
-	      <Link to="/confirmation">Confirmation</Link>
-
 	      <Route exact path="/" render={()=>
 	      	<Home
 	      	history={history}

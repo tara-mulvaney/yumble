@@ -3,7 +3,7 @@ import "./FilterRestaurants.css";
 import Header from '../Header/Header'
 import RestaurantProfile from "../../components/RestaurantProfile/RestaurantProfile";
 import Footer from '../Footer/Footer'
-// import StarRating from "../../components/RestaurantList/StarRating";
+import StarRating from "../../components/RestaurantList/StarRating";
 
 function FilterRestaurants(props) {
   const {data,history,handleClick} = props
@@ -25,11 +25,11 @@ function FilterRestaurants(props) {
               );
             })):null}
           </div>
-          <div className="list-filter">
+          {/*<div className="list-filter">
             <h1>Filter</h1>
             <div className="list-flex">
               <p>Price</p>
-              {/* <StarRating /> */}
+              <StarRating />
               <button className="list-filter-price">$</button>
               <button className="list-filter-price">$$</button>
               <button className="list-filter-price">$$$</button>
@@ -60,7 +60,7 @@ function FilterRestaurants(props) {
                 <h1>Search</h1>
               </button>
             </div>
-          </div>
+          </div>*/}
           <div>
         </div>
       </div>
