@@ -22,7 +22,7 @@
   "homepage": "https://github.com/catvonnegut/yumble#readme",
   "dependencies": {
     "eslint": "^5.16.0",
-    "express": "^4.17.0",
+    "express": "^4.17.3",
     "nodemon": "^1.19.0",
     "pg": "^7.11.0",
     "sequelize": "^5.8.6"
